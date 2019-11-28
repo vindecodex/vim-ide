@@ -22,3 +22,5 @@ Install [Node.js](https://nodejs.org/en/download/)
 | `<Up>` | Up Arrow key |
 | `<Down` | Down Arrow key |
 | `<Space>` | Space Bar key |
+| `<M>` | Meta key (option or alt key) |
+| `<Leader>` | default is `\` key but most people define it to `,` by: `let mapleader = ','` |
