@@ -24,3 +24,15 @@ Install [Node.js](https://nodejs.org/en/download/)
 | `<Space>` | Space Bar key |
 | `<M>` | Meta key (option or alt key) |
 | `<Leader>` | default is `\` key but most people define it to `,` by: `let mapleader = ','` |
+
+### Config 001 .vimrc
+`set nocompatible`
+`filetype plugin indent on`
+
+>Checking
+
+`:filetype`
+
+>output
+
+`filetype detection:ON plugin:ON indent:ON`
