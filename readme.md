@@ -44,7 +44,7 @@ Install [Node.js](https://nodejs.org/en/download/)
 - Lets install Neovim `brew install neovim`
 - Now lets recreate the ~/.vim `mkdir ~/.vim`
 - Add a file `touch ~/.vim/vimrc`
-- Lets create Neovim config directory `mkdir ~/.config/nvim
+- Lets create Neovim config directory `mkdir ~/.config/nvim`
 - Inside ~/.config/nvim create file `vi ~/.config/nvim/init.vim`
 - Add this code below:
 ```bash
