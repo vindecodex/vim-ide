@@ -60,6 +60,7 @@ source ~/.vim/vimrc
 
 #### Creating Alias
 alias vi="nvim"
+
 alias vim="nvim"
 
 #### Useful Plugins
