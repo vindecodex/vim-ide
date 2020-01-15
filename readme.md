@@ -59,6 +59,8 @@ source ~/.vim/vimrc
 - `mkdir -p $VIMDATA/undo`
 
 #### Creating Alias
+- Add this line to your aliases files
+
 alias vi="nvim"
 
 alias vim="nvim"
