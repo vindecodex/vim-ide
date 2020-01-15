@@ -61,9 +61,9 @@ source ~/.vim/vimrc
 #### Creating Alias
 - Add this line to your aliases files
 
-alias vi="nvim"
+`alias vi="nvim"`
 
-alias vim="nvim"
+`alias vim="nvim"`
 
 #### Useful Plugins
 - FuzzyFinder (FZF)
