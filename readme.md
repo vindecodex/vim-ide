@@ -25,18 +25,6 @@ Install [Node.js](https://nodejs.org/en/download/)
 | `<M>` | Meta key (option or alt key) |
 | `<Leader>` | default is `\` key but most people define it to `,` by: `let mapleader = ','` |
 
-### Config 001 .vimrc
-`set nocompatible`
-`filetype plugin indent on`
-
->Checking
-
-`:filetype`
-
->output
-
-`filetype detection:ON plugin:ON indent:ON`
-
 #### Setup our VIM with Neovim
 - Make sure vim version is 8 above by running command: `vim --version`
 - Clean our vim by deleting existing files (~/.vim and .vimrc)
