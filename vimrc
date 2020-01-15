@@ -35,6 +35,9 @@ let mapleader=","
 " TO allow copy paste from other sources
 set clipboard=unnamedplus
 
+set listchars=tab:\ɷ\ 
+set list
+
 " Theme
 " Installed themes [vice, aurora, srcery]
 set background=dark
