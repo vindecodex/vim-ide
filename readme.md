@@ -36,3 +36,34 @@ Install [Node.js](https://nodejs.org/en/download/)
 >output
 
 `filetype detection:ON plugin:ON indent:ON`
+
+#### Setup our VIM with Neovim
+- Make sure vim version is 8 above by running command: `vim --version`
+- Clean our vim by deleting existing files (~/.vim and .vimrc)
+- To update  vim `brew upgrade vim`
+- Lets install Neovim `brew install neovim`
+- Now lets recreate the ~/.vim `mkdir ~/.vim`
+- Add a file `touch ~/.vim/vimrc`
+- Lets create Neovim config directory `mkdir ~/.config/nvim
+- Inside ~/.config/nvim create file `vi ~/.config/nvim/init.vim`
+- Add this code below:
+```bash
+set runtimepath^=~/.vim runtimepath+=~/.vim/after
+let &packpath=&runtimepath
+source ~/.vim/vimrc
+```
+- The code above lets you share Vim 8 and Neovim configs so that we are not going to create multiple configs
+- `export VIMCONFIG=~/.config/nvim`
+- `export VIMDATA=~/.local/share/nvim`
+- `mkdir -p $VIMCONFIG/pack/bundle/start` - this is where we going to clone plugins from github
+- `mkdir -p $VIMDATA/undo`
+
+#### Creating Alias
+alias vi="nvim"
+alias vim="nvim"
+
+#### Useful Plugins
+- FuzzyFinder (FZF)
+- NerdTree
+- NerdCommenter
+- Themes :) find here [VimColors](https://vimcolors.com/)
