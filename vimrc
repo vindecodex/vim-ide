@@ -29,7 +29,9 @@ let g:NERDTrimTrailingWhitespace = 1
 
 " Enable NERDCommenterToggle to check all selected lines is commented or not 
 let g:NERDToggleCheckAllLines = 1
+
 let mapleader=","
+
 " TO allow copy paste from other sources
 set clipboard=unnamedplus
 
