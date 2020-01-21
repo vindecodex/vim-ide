@@ -36,6 +36,9 @@ let mapleader=","
 " TO allow copy paste from other sources
 set clipboard=unnamedplus
 
+" Set encoding to utf-8
+set encoding=utf-8
+
 " LineIndent Guide
 set listchars=tab:\ɷ\ 
 set list
