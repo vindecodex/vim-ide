@@ -57,4 +57,5 @@ source ~/.vim/vimrc
 - FuzzyFinder (FZF)
 - NerdTree
 - NerdCommenter
+- Vim-DevIcons
 - Themes :) find here [VimColors](https://vimcolors.com/)
