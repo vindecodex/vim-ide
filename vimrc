@@ -3,6 +3,7 @@ nnoremap <C-f> :<C-u>FZF<CR>
 
 " NerdTree
 map <C-n> :NERDTreeToggle<CR>
+let NERDTreeShowHidden=1
 
 " NerdCommenter
 filetype plugin on
@@ -40,9 +41,15 @@ set listchars=tab:\ɷ\
 set list
 
 " Theme
-" Installed themes [vice, aurora, srcery]
-set background=dark
-colorscheme aurora
+" Installed themes [vice, aurora, srcery, ayu]
 set number relativenumber
-let g:office_dark_CursorLineNr = 'off'
-let g:office_dark_LineNr = 'off'
+set background=dark
+colorscheme ayu
+" let ayucolor="light"  " for light version of theme
+" let ayucolor="mirage" " for mirage version of theme
+let ayucolor="dark" 
+if has('nvim') || has('termguicolors')
+  set termguicolors
+endif
+
+" Font {Input}
