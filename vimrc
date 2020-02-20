@@ -43,10 +43,10 @@ set encoding=utf-8
 set listchars=tab:\■\ 
 set list
 
-set shiftwidth=8
+set shiftwidth=2
 set smarttab
 " Set indentation size
-set tabstop=2
+set tabstop=4
 
 " Theme
 " Installed themes [vice, aurora, srcery, ayu]
