@@ -40,13 +40,13 @@ set clipboard=unnamedplus
 set encoding=utf-8
 
 " LineIndent Guide
-set listchars=tab:\؆\ 
+set listchars=tab:\■\ 
 set list
 
 set shiftwidth=8
 set smarttab
 " Set indentation size
-set tabstop=5
+set tabstop=4
 
 " Theme
 " Installed themes [vice, aurora, srcery, ayu]
@@ -59,5 +59,6 @@ let ayucolor="dark"
 if has('nvim') || has('termguicolors')
   set termguicolors
 endif
+
 
 " Font {Input}
