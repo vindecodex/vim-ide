@@ -40,14 +40,19 @@ set clipboard=unnamedplus
 set encoding=utf-8
 
 " LineIndent Guide
-set listchars=tab:\ɷ\ 
+set listchars=tab:\؆\ 
 set list
+
+set shiftwidth=8
+set smarttab
+" Set indentation size
+set tabstop=5
 
 " Theme
 " Installed themes [vice, aurora, srcery, ayu]
 set number relativenumber
 set background=dark
-colorscheme ayu
+colorscheme vice
 " let ayucolor="light"  " for light version of theme
 " let ayucolor="mirage" " for mirage version of theme
 let ayucolor="dark" 
