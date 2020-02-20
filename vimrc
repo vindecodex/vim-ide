@@ -46,7 +46,7 @@ set list
 set shiftwidth=8
 set smarttab
 " Set indentation size
-set tabstop=4
+set tabstop=2
 
 " Theme
 " Installed themes [vice, aurora, srcery, ayu]
