@@ -49,16 +49,9 @@ set smarttab
 set tabstop=4
 
 " Theme
-" Installed themes [vice, aurora, srcery, ayu]
+" available themes installed [plastic, candid]
 set number relativenumber
+set termguicolors
 set background=dark
-colorscheme vice
-" let ayucolor="light"  " for light version of theme
-" let ayucolor="mirage" " for mirage version of theme
-let ayucolor="dark" 
-if has('nvim') || has('termguicolors')
-  set termguicolors
-endif
-
-
-" Font {Input}
+syntax on
+colorscheme plastic
