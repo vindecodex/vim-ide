@@ -55,3 +55,16 @@ set termguicolors
 set background=dark
 syntax on
 colorscheme plastic
+
+" Highlight active row
+" hi <comment, constant, normal, nontext, special, cursor,
+" cursorline, errormsg, folded>
+" cterm=<bold, underline>
+" term=<none>
+" autocmd <WinEnter, WinLeave, search about autocmd for more>
+" guibg => background ctermbg=background ctermfg=foreground
+set cursorline
+hi cursorline cterm=underline term=none
+autocmd WinEnter * setlocal cursorline
+autocmd WinLeave * setlocal cursorline
+highlight CursorLine guibg=none ctermbg=234
