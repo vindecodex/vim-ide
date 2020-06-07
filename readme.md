@@ -1,4 +1,6 @@
-### Vim as Development Invironment
+### Vim as Development Invironment MAC version
+
+> Updated added ubuntu
 
 ---
 Install [Node.js](https://nodejs.org/en/download/)
@@ -28,10 +30,15 @@ Install [Node.js](https://nodejs.org/en/download/)
 #### Setup our VIM with Neovim
 - Make sure vim version is 8 above by running command: `vim --version`
 - Clean our vim by deleting existing files (~/.vim and .vimrc)
+> In ubuntu files can be found on /etc/vim/vimrc
 - To update  vim `brew upgrade vim`
+> In ubuntu `apt-get update` => `apt-get install vim`
 - Lets install Neovim `brew install neovim`
+> In ubuntu `add-apt-repository ppa:neovim-ppa/unstable` => `apt-get update` => `apt-get install neovim`
 - Now lets recreate the ~/.vim `mkdir ~/.vim`
+> In ubuntu `cd /etc/vim`
 - Add a file `touch ~/.vim/vimrc`
+> In ubuntu `touch vimrc`
 - Lets create Neovim config directory `mkdir ~/.config/nvim`
 - Inside ~/.config/nvim create file `vi ~/.config/nvim/init.vim`
 - Add this code below:
@@ -46,6 +53,14 @@ source ~/.vim/vimrc
 - `mkdir -p $VIMCONFIG/pack/bundle/start` - this is where we going to clone plugins from github
 - `mkdir -p $VIMDATA/undo`
 
+> for ubuntu do this instead
+```bash
+export VIMCONFIG=~/.config/nvim
+mkdir -p $VIMCONFIG/pack/bundle/start
+```
+> for ubuntu run nvim so that nvim automatically create nvim on .local/share and run below cammand
+`mkdir -p ~/.local/share/nvim/undo`
+
 #### Creating Alias
 - Add this line to your aliases files
 
@@ -54,7 +69,7 @@ source ~/.vim/vimrc
 `alias vim="nvim"`
 
 #### Useful Plugins
-- FuzzyFinder (FZF)
+- FuzzyFinder (FZF) - in ubuntu install fzf binary instead of cloning repository to bundle/start
 - NerdTree
 - NerdCommenter
 - Vim-DevIcons ( it will not work on alacritty )
