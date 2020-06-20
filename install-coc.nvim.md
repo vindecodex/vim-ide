@@ -35,3 +35,20 @@ open nvim
 `:CocInstall coc-tabine`
 
 For more information about [coc-tabnine](https://github.com/neoclide/coc-tabnine)
+
+---
+
+Open Coc Config
+
+`:CocConfig`
+
+paste and save
+```json
+{
+	"coc.preferences.useQuickfixForLocations": true,
+	"coc.preferences.snippets.enable": true,
+	"coc.preferences.extensionUpdateCheck": "never",
+	"suggest.disableMenu": true,
+	"suggest.snippetIndicator": ""
+}
+```
