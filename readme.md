@@ -68,6 +68,9 @@ mkdir -p $VIMCONFIG/pack/bundle/start
 
 `alias vim="nvim"`
 
+#### Tabnine for Auto Completion
+[Just Follow This steps for installing Tabnine](/install-coc.nvim.md)
+
 #### Useful Plugins
 - FuzzyFinder (FZF) - in ubuntu install fzf binary instead of cloning repository to bundle/start
 - NerdTree
