@@ -46,7 +46,9 @@ set list
 set shiftwidth=2
 set smarttab
 " Set indentation size
-set tabstop=4
+set tabstop=2
+" convert tab characters to space character during indentation
+set expandtab
 
 " Theme
 " available themes installed [plastic, candid]
