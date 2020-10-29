@@ -78,4 +78,5 @@ mkdir -p $VIMCONFIG/pack/bundle/start
 - NerdTree
 - NerdCommenter
 - Vim-DevIcons ( it will not work on alacritty )
+- Lightline.vim
 - Themes :) find here [VimColors](https://vimcolors.com/)
