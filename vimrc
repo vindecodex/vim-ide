@@ -51,7 +51,7 @@ set tabstop=2
 set expandtab
 
 " Theme
-" available themes installed [plastic, candid]
+" available themes installed [plastic, candid, deus]
 set number relativenumber
 set termguicolors
 set background=dark
