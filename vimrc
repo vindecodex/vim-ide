@@ -70,3 +70,13 @@ hi cursorline cterm=underline term=none
 autocmd WinEnter * setlocal cursorline
 autocmd WinLeave * setlocal cursorline
 highlight CursorLine guibg=none ctermbg=234
+
+" Vim-go
+let g:go_fmt_command="goimports"
+let g:go_fmt_autosave=1
+let g:go_highlight_functions=1
+let g:go_highlight_function_calls=1
+let g:go_highlight_methods=1
+let g:go_highlight_structs=1
+let g:go_highlight_operators=2
+let g:go_highlight_build_constraints=1
