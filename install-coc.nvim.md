@@ -36,6 +36,10 @@ open nvim
 
 For more information about [coc-tabnine](https://github.com/neoclide/coc-tabnine)
 
+`:CocInstall coc-tsserver`
+
+For more information about [coc-tsserver](https://github.com/neoclide/coc-tsserver)
+
 ---
 
 Open Coc Config
@@ -49,6 +53,7 @@ paste and save
 	"coc.preferences.snippets.enable": true,
 	"coc.preferences.extensionUpdateCheck": "never",
 	"suggest.disableMenu": true,
-	"suggest.snippetIndicator": ""
+	"suggest.snippetIndicator": "",
+  "tsserver.trace.server": "verbose"
 }
 ```
