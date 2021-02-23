@@ -80,3 +80,6 @@ mkdir -p $VIMCONFIG/pack/bundle/start
 - Vim-DevIcons ( it will not work on alacritty )
 - Lightline.vim
 - Themes :) find here [VimColors](https://vimcolors.com/)
+
+Themes I liked:
+https://github.com/bluz71/vim-moonfly-colors
