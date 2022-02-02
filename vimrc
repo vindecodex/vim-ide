@@ -34,26 +34,29 @@ let g:NERDToggleCheckAllLines = 1
 let mapleader=","
 
 " TO allow copy paste from other sources
-set clipboard=unnamedplus
+set clipboard=unnamedplus "Linux
+" set clipboard=unnamed "OSX
 
 " Set encoding to utf-8
 set encoding=utf-8
 
 " LineIndent Guide
-set listchars=tab:\■\ 
+set listchars=tab:\×\ 
 set list
 
-set shiftwidth=2
-set smarttab
+" set shiftwidth=2 " not sure about this what it does: please comment if wanted to have similar indentation with vscode and adjust tabstop instead.
+" set smarttab " not sure about this: please comment
 " Set indentation size
 set tabstop=2
 " convert tab characters to space character during indentation
-set expandtab
+" set expandtab
 
 " Theme
 " available themes installed [plastic, candid, deus]
 set number relativenumber
-set termguicolors
+if has('termguicolors')
+	set termguicolors
+endif
 set background=dark
 syntax on
 colorscheme plastic
@@ -70,6 +73,30 @@ hi cursorline cterm=underline term=none
 autocmd WinEnter * setlocal cursorline
 autocmd WinLeave * setlocal cursorline
 highlight CursorLine guibg=none ctermbg=234
+
+" Tabnine
+set rtp+=~/.config/nvim/pack/bundle/starts/tabnine-vim
+
+function! s:check_back_space() abort
+	let col = col('.') - 1
+	return !col || getline('.')[col - 1] =~ '\s'
+endfunction
+
+inoremap <silent><expr> <TAB>
+			\ pumvisible() ? "\<C-n>" :
+			\ <SID>check_back_space() ? "\<TAB>" :
+			\ coc#refresh()
+
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gy <Plug>(coc-type-definition)
+nmap <silent> gi <Plug>(coc-implementation)
+nmap <silent> gr <Plug>(coc-references)
+
+if has("patch-8.1.1564")
+	set signcolumn=number
+else
+	set signcolumn=no
+endif
 
 " Vim-go
 let g:go_fmt_command="goimports"
