@@ -1,0 +1,27 @@
+draw_bold_text_with_bright_colors: true
+
+# NOTE
+# Install Gintronic Font
+# Find other theme for alacritty or use the aura-theme.yml
+
+import:
+  - ~/.config/alacritty/aura-theme.yml
+
+# Font
+font:
+ normal:
+  family: Gintronic
+  style: Regular
+
+ bold:
+  family: Gintronic
+  style: Bold
+
+ italic:
+  family: Gintronic
+  style: Italic
+
+
+
+key_bindings:
+  - { key: Return, mods: Control, action: ToggleFullScreen }
