@@ -61,6 +61,12 @@ set background=dark
 syntax on
 colorscheme plastic
 
+" For Ayu theme
+" let ayucolor="light"  " for light version of theme
+" let ayucolor="mirage" " for mirage version of theme
+" let ayucolor="dark"   " for dark version of theme
+" colorscheme ayu
+
 " Highlight active row
 " hi <comment, constant, normal, nontext, special, cursor,
 " cursorline, errormsg, folded>
